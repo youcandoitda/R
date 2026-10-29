@@ -1,0 +1,5 @@
+x <- c(10, 20, 30, 40)
+names <- c("A", "B", "C", "D")
+barplot(x, names.arg = names, main = "Bar Chart")
+pie(x, labels = names, main = "Pie Chart")
+plot(x, type = "b", main = "Line Chart")

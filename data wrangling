@@ -1,0 +1,7 @@
+ata <- data.frame (
+ Name = c("A","B","C"),
+ Marks = c(80,60,90)
+)
+result <- data [data$Marks >= 70,]
+result <- result [order (result$Marks),]
+print(result)

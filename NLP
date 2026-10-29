@@ -1,0 +1,13 @@
+text <- "Data Science is interesting"
+words <- strsplit(text, " ")[[1]]
+print(words)
+print(paste(words[-length(words)], words[-1]))
+print(data.frame(
+  word = words,
+  pos = c("NOUN", "NOUN", "VERB", "ADJ")
+))
+count <- 1
+total <- 3
+vocab <- 4
+print((count + 1) / (total + vocab))
+print("Data Science | is | interesting")

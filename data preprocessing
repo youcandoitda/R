@@ -1,0 +1,4 @@
+x <- c(10,20,NA,40,50)
+x [is.na(x)] <- mean(x,na.rm = TRUE)
+x <- (x - min(x)) / (max(x) - min(x))
+print(x)

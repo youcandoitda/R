@@ -1,0 +1,7 @@
+data <- data.frame (
+ Name = c("A","B","C"),
+ Age = c(20,21,22),
+ Marks = c(80,75,90)
+)
+data$Result <- ifelse(data$Marks >= 50,"Pass","Fail")
+print(data)

@@ -1,0 +1,16 @@
+library(e1071)
+data <- data.frame (
+  weather = factor (c("Sunny","Sunny","Rainy","Rainy")),
+  play = factor (c("Yes","Yes","No","No"))
+)
+model <- naiveBayes (play~weather,data)
+print(predict(model,data.frame(
+  weather = factor("Sunny",levels = levels(data$weather))
+)))
+
+
+
+
+
+
+install.packages("e1071", repos="https://cloud.r-project.org")

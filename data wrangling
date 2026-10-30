@@ -1,4 +1,4 @@
-ata <- data.frame (
+data <- data.frame (
  Name = c("A","B","C"),
  Marks = c(80,60,90)
 )
